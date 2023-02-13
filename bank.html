@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Widthdraw Application</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <section class="bank__details bg-slate-100 py-40">
+            <div class="bank__area w-50 bg-slate-200 w-2/3 p-5 mx-auto mt-10 border rounded-md py-10">
+                <h1 class="text-3xl text-center mb-5">Bank<span class="text-green-600 font-semibold">Widthdraw</span> Details</h1> 
+                <div class="grid grid-cols-3 gap-4 text-white">
+                   <div class="bg-blue-600 p-5 py-10 border-md">
+                        <h2 class="font-semibold text-lg">Deposit</h2>
+                        <h3>$<span id="deposit-amount">00</span></h3>
+                   </div>
+                   <div class="bg-indigo-600 p-5 py-10 border-md">
+                        <h2 class="font-semibold text-lg">Widthdraw</h2>
+                        <h3>$<span id="widthdraw-amount">100</span></h3>
+                    </div>
+                    <div class="bg-sky-500 p-5 py-10 border-md">
+                        <h2 class="font-semibold text-lg">Blance</h2>
+                        <h3>$<span id="total-blance">1127</span></h3>
+                    </div>
+                </div>
+                <div class="bank__area-bottom grid grid-cols-2 gap-4 mx-auto mt-10 border rounded-md">
+                    <div class="bg-yellow-600 p-5 border-md ">
+                        <h2 class="font-semibold text-lg text-white">Please Deposit</h2>
+                        <input id="deposit-field" class="p-2 block mt-4 w-10/12" type="text" placeholder="Please add your deposit">
+                        <button id="btn-deposit" class="p-2 bg-stone-900 text-white px-4 rounded-sm hover:bg-red-500 mt-5">Deposit</button>
+                         
+                   </div>
+                   <div class="bg-orange-500 p-5 border-md">
+                        <h2 class="font-semibold text-lg text-white">Please Widthdraw</h2>
+                        <input id="widthdraw-field" class="p-2 block mt-4 w-10/12" type="text" placeholder="Please widthdraw your ammount">
+                        <button id="btn-widthdraw" class="p-2 bg-stone-900 text-white px-4 rounded-sm hover:bg-red-500 mt-5">Widthdraw</button>
+                        
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </main> 
+    
+    <script src="js/utilise.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/widthdraw.js"></script>
+</body>
+</html>
